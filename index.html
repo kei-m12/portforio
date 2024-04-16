@@ -28,15 +28,35 @@
 <body>
 
     <header>
-        <img src="./images/pc_slider.jpg" alt="ドライフラワーの画像">
-        <div class="header_inner">
 
-            <h1>PORTFOLIO<br>
-                <span>Keimi<br>
-                    Hahayakawa</span>
+        <div class="header_inner">
+            <picture>
+                <source srcset="./images/sp_solider@2x-50.jpg" media="(max-width: 767px)"><img
+                    src="./images/pc_slider.jpg" alt="ドライフラワーの画像">
+            </picture>
+
+            <h1><span>PORTFOLIO</span><br>
+                Keimi<br>
+                Hahayakawa
             </h1>
         </div>
         <nav class="header_nav">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+        </div>
+
+        <nav class="header_nav_sp">
             <a href="./index.html" class="logo">
                 <img src="./images/logo.png" alt="logo">
             </a>
@@ -70,8 +90,8 @@
                     <h3>早川景未</h3>
                     <h4>keimi hayakawa</h4>
                     <p>千葉県出身。２児の母。<br>
-                        前職にてWEBデザインに携わる機会が増えたのがきっかけで<br>
-                        増えたのがきっかけでIT業界に転職を決意。<br>
+                        前職にてWEBデザインに携わる機会が<br>
+                        増えた事がきっかけとなり、IT業界に転職を決意。<br>
                         その後デザスタへの入学を決意し、<br>
                         より本格的なデザインとWeb制作を学ぶ。</p>
 
@@ -81,6 +101,7 @@
                     <p>・実は韓国語が話せる<br>
                         ・エステティシャンをしていた</p>
                 </div>
+
             </div>
             <a href="about.html" class="button_about">view more</a>
         </section>
@@ -125,6 +146,23 @@
         </a>
         <p>©2024 keimi hayakawa</p>
     </footer>
+    <script>
+        //ハンバーガーメニュー
+        $(function () {
+            $(".hamburger").on("click", function () {
+                $(".hamburger").toggleClass("open");
+                $(".header_nav_sp").fadeToggle();
+            });
+        });
+
+        $(".works_main_nav").slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true
+        });
+
+    </script>
+
 </body>
 
 </html>
