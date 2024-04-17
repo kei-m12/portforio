@@ -183,9 +183,13 @@ background-color: #DBD2D0;
 }
 .career2 img{
 width: 300px;
+padding-top: 90px;
+padding-bottom: 35px;
 }
 .career2 ul ,.career ul{
     display: flex;
+    gap: 125px;
+    padding-bottom: 200px;
 }
 
 .name h2{
@@ -345,13 +349,48 @@ footer p{
     padding-bottom: 25px;
 
 }
-.header_nav_sp{
+/* works01 */
+
+.works_sub h2{
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.works_sub h3{
+    font-size: 18px;
+    border-bottom: 1px solid #544C40;
+    padding-bottom: 55px;
+}
+.works_sub dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.works_sub dt{
+    font-weight: 700;
+    width: 25%;
+    padding: 16px 8px;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+.works_sub dd{
+    width: 75%;
+    padding: 16px 8px;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0;
+    box-sizing: border-box;
+}
+.works_text span{
+    border-bottom: 0px;
+}
+
+.header_nav_sp,.works_main_nav_sp{
     display: none;
 }
 @media screen and (max-width:1100px){
     .header_nav{
         display: none;
     }
+    
     .hamburger{
         width: 30px;
         height: 30px;
@@ -422,10 +461,20 @@ footer p{
     .header_nav_sp img {
         width: 60px;
     }
+    
+        
+    
 }
 @media screen and (max-width:767px){
 /* home */
-main{
+.works_main_nav{
+    display: none;
+}
+.works_main_nav_sp{
+    display: block;
+    padding-bottom: 50px;
+}
+main,.form{
     margin-right: 25px;
     margin-left: 25px;
 }
@@ -446,9 +495,44 @@ h1 span{
     padding-top: 50px;
 }
 .slick-dots{
-    bottom: 80px;
+    bottom: 10px;
 }
 .slick-dots ul{
     color: #544C40;
 }
+.Service_nav h2{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.Service_nav h5{
+    font-size: 11px;
+}
+.service_imges{
+    flex-direction: column;
+
+}
+.Contact_nav p{
+    font-size: 14px;
+}
+
+/* about */
+.designer{
+    display: none;
+}
+.aboutu_main{
+    margin: 0 auto;
+}
+.plofile ,.career ,.skill ,.career2{
+    margin-left:10px;
+    margin-right: 10px; 
+    text-align: center;
+}
+.skill p,.plofile p{
+    text-align:left ;
+}
+.career2 ul{
+    flex-direction: column;
+}
+/* contact */
+
 }
