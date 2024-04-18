@@ -349,17 +349,35 @@ footer p{
     padding-bottom: 25px;
 
 }
-/* works01 */
+/* works　実績　テキスト */
+.worksline_content {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 80px;
+}
+.worksline_content::before{
+    margin-right: 20px;
+}
+.worksline_content::before{
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #544C40;}
 
 .works_sub h2{
     font-size: 24px;
     text-align: left;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    border-left:5px solid #D3B3A8; 
+    padding:2px 8px
 }
 .works_sub h3{
     font-size: 18px;
     border-bottom: 1px solid #544C40;
     padding-bottom: 55px;
+    padding-left: 20px;
 }
 .works_sub dl{
     display: flex;
@@ -378,12 +396,55 @@ footer p{
     border-bottom: 1px solid #d9d9d9;
     margin: 0;
     box-sizing: border-box;
+    line-height: 24px;
 }
-.works_text span{
-    border-bottom: 0px;
+/* works_０１ */
+.works_sub img{
+    padding-top: 55px;
+}
+    
+.works_1_PC_LP{
+    padding-top: 180px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.header_nav_sp,.works_main_nav_sp{
+/* works_04 */
+.works_02_LP {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 180px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #d3b3a844;
+}
+.portfolio_pc img{
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.portfolio_sp img{
+        width: 200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    }
+
+ /* side_btn  works実績用 */
+.side1_pc img{
+    position: fixed;
+    width: 20px;
+    right: 40px;
+    top:450px;
+}
+.side2_pc img{
+    position: fixed;
+    width: 20px;
+    right: 40px;
+    top:350px;
+}
+/* none sp*/ 
+.header_nav_sp,.works_main_nav_sp
+,.side1_sp,.side2_sp{
     display: none;
 }
 @media screen and (max-width:1100px){
@@ -513,6 +574,7 @@ h1 span{
 }
 .Contact_nav p{
     font-size: 14px;
+    line-height: 25px;
 }
 
 /* about */
@@ -535,4 +597,67 @@ h1 span{
 }
 /* contact */
 
+/* works　実績*/
+.works_sub h2{
+font-size: 14px;
+margin-bottom: 8px;
 }
+.works_sub h3{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.works_sub dt{
+    width: 35%;
+    padding: 16px 4px;
+    font-size: 13px;
+}
+.works_sub dd{
+    display: flex;
+align-items: center;
+width: 65%;
+padding: 16px 8px;
+font-size: 13px;
+line-height: 1.4;
+}
+
+/* works_01*/
+.works_1_PC_LP{
+  padding-top: 100px;
+}
+
+/* works_02 */
+.works_02_LP{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+    max-width: 100%;
+}
+
+.works_02_LP img{
+    max-width: 100%;
+}
+.portfolio_pc{
+    margin-inline: 10%;
+}
+/* work 実績のサイドボタン */
+.side1_pc,.side2_pc{
+    display: none;
+    
+}
+
+}
+.side{
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 60px;
+
+}
+.side1_sp img {
+    width: 67px;
+}
+.side2_sp img{
+    width: 90px;
+}
+
