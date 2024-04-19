@@ -83,6 +83,21 @@
             <span class="design_cafe_pc"><img src="./images/dezasuta_LP_fin.jpg" alt=""></span>
             <span class="design_cafe_sp"><img src="./images/designcafe_sp.jpg" alt=""></span>
         </div>
+
+        <body class="mac">
+            <div id="device">
+                <div id="wrapper">
+                    <img src="./images/designcafe_sp.jpg" alt="">
+                </div>
+                <div id="button_mac"></div>
+                <div id="earpiece"></div>
+            </div>
+
+
+
+
+
+        </body>
         <div class="side1_pc">
             <a href="./works.html"><img src="./images/side_web@2x-8.png" alt=""></a>
         </div>
@@ -120,6 +135,16 @@
                 $(".header_nav_sp").fadeToggle();
             });
         });
+
+
+        // OS判定
+        $(function () {
+            if (navigator.userAgent.indexOf('Mac') > 0) {
+                $('body').addClass('mac');
+            }
+        });
+        //-->
+
     </script>
 </body>
 
