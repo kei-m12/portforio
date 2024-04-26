@@ -401,22 +401,6 @@ font-size: 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* contact_html */
 /* .form p{ 
     font-size: 16px;
@@ -606,43 +590,7 @@ footer p{
     margin-bottom: 80px;
     }
 
-    <!--
-    body {
-        margin:0;
-        padding:0;
-        text-align:center;
-        
-    }
-    #device {
-        position:relative;
-        margin:30px auto;
-        background-color: #fff;
-        width:344px;		/* 横スクロールバー+ボーダー */
-        padding:100px 17px 15px;
-        border:4px solid #c9c9c9;
-        border-radius:50px;
-        box-shadow:0 1px 24px #111;
-    }
-   
     
-    #wrapper {
-        overflow-x:hidden;
-        overflow-y:scroll;
-        height:450px;		/* ★iphone5 */
-        border:3px solid #333;
-        border-radius:2px;
-    }
-    #wrapper img {
-        width:280px;
-        border:0;
-    }
-    #button_mac{
-    
-        margin: 25px auto 0;
-    }
-    
-    -->
-    /* スマホ */
     /* ---- スマートフォン風スタイル --- */
 .smartphone,.is-style-smartphone{
         --frame-color:#ced1d5;
@@ -686,67 +634,14 @@ margin: 0 auto 3em;
 
     }
     /* ---- END スマートフォン風スタイル --- */
-/* wokes_05,11 */
 
-/* <!--
-body {
-	margin:0;
-	padding:0;
-	text-align:center;
-	
-}
-#device {
-	position:relative;
-	margin:30px auto;
-	background-color: #fff;
-	width:344px;		/* 横スクロールバー+ボーダー */
-	/* padding:100px 17px 15px;
-	border:4px solid #c9c9c9;
-	border-radius:50px;
-	box-shadow:0 1px 24px #111;
-}
-.mac #device {
-	width:326px;
-}
-#wrapper {
-	overflow-x:hidden;
-	overflow-y:scroll;
-	height:568px;		/* ★iphone
-	border:3px solid #333;
-	border-radius:2px;
-}
-#wrapper img {
-	width:320px;
-	border:0;
-}
-#button {
-	width:58px;
-	height:58px;
-	margin:15px auto 0;
-}
-#earpiece {
-	position:absolute;
-	top:55px;
-	left:50%;
-	width:60px;
-	height:6px;
-	margin-left:-33px;
-}
-*/ 
 
- .relative{
-        position: relative;
-       
-    }
-.absolute{
-        position: absolute;
-        left: 91px;
-        top: 66px;
-        width: 393px;
-    }
- .pc{
-        width: 577px;
-    }
+/* works11,5 */
+
+.promotion_1 image {
+   width: 200px;
+}
+
 .pc2{
         padding-bottom: 90px;
         width: 350px;
@@ -767,7 +662,7 @@ body {
 .promotion_3 h4,.promotion_2 h4,.promotion_1 h4{
         font-size: 20px;
     }
-.promotion_3,.promotion_2{
+.promotion_3,.promotion_2,.promotion_1{
     background-color: #eda8864b;
     margin-top: 80px;
     margin-bottom: 80px;
