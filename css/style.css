@@ -276,12 +276,18 @@ width: 300px;
 padding-top: 90px;
 padding-bottom: 35px;
 }
-.career2 ul ,.career ul{
+.career2 ul{
     display: flex;
-    gap: 125px;
-    padding-bottom: 200px;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
 }
-
+.career2 p{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: start;
+    margin-bottom: 100px;
+}
 .name h2{
 font-size: 24px;
 text-align: left;
@@ -296,44 +302,43 @@ padding-bottom: 18px;
     padding-top: 63px;
    
 }
-.career_year1,.career_year2,
-.career_year3,.career_year4,.career_year5{
-    padding-left: 82px;
+.name,.plofile h2,.plofile p
+,.skill h2,.skill p{
+    text-align: left;
+margin-left: 105px;
+}
+.career{
+    display: flex;
+    justify-content: space-between;
+}
+.career_box{
+    margin-top: 70px;
+}
+.career li{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 100px;
 }
 .career_text{
+    text-align: left;
     padding-left: 53px;
     line-height: 21px;
     padding-bottom: 20px; 
 }
 .career_text1{
-    padding-left: 53px;
+    text-align: left;
+    padding-left: 30px;
     line-height: 21px;
-    padding-bottom: 25px; 
-    padding-top: 56px; 
-}
-.career_year1{
-padding-top: 60px;
-padding-bottom: 116px;
-}
-.career_year2{
-padding-bottom: 50px;
-}
-.career_year3{
-    padding-bottom: 25px;
-}
-.career_year4{
-    padding-bottom: 92px;
-}
-.career_year5{
-    padding-bottom: 90px;
+    padding-bottom: 20px; 
 }
 
+.aboutline{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 800px;
+    border-bottom:solid 1px #544C40 ;
 
-
-
-
-
-
+}
 
 /* works_html */
 
@@ -972,8 +977,16 @@ margin: 0 auto;
     font-size: 14px;
     line-height: 25px;
 }
-
-/* about */
+/* works.html */
+.works_page_menu{
+    justify-content: space-between; 
+}
+.works_page_menu img {
+    width: 170px;
+    padding-bottom: 10px;
+margin-left: 0;
+}
+/* about.html */
 .designer{
     display: none;
 }
@@ -985,12 +998,44 @@ margin: 0 auto;
     margin-right: 10px; 
     text-align: center;
 }
+.name,.plofile h2,.plofile p
+,.skill h2,.skill p{
+    margin-left: 10%;
+
+}
+.career_box li{
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.year{
+    font-size: 11px;
+    line-height: 22px;
+}
+.career_text{
+    font-size: 14px;
+    line-height: 22px;
+}
 .skill p,.plofile p{
     text-align:left ;
 }
-.career2 ul{
+.career,.career2 ul {
     flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
 }
+.career2 p{
+    margin-left: 10%;
+}
+.aboutline{
+  
+    width: 90%;
+ 
+}
+.career2 img {
+    width: 198px;
+}
+
 /* contact */
 
 /* works　実績*/
