@@ -94,7 +94,7 @@ p{
 }
 .About_nav p{
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 30px;
 }
 
@@ -235,7 +235,7 @@ gap: 37px;
   
 }
 .Contact_nav img{
-    width: 110px;
+    width: 100px;
     margin: auto;
   display: block;
   padding-bottom: 50px;
@@ -854,8 +854,6 @@ h1{
  color: whitesmoke;
     font-size: 40px;
     width: 216px;
-    margin-top: 50px;
-   
 }
 h1 span{
     display: none;
@@ -885,7 +883,7 @@ h1 span{
     padding-bottom: 30px;
 }
 .Service_nav h5{
-    font-size: 11px;
+    font-size: 13px;
 }
 .Service_nav p{
     font-size: 12px;
@@ -903,7 +901,7 @@ margin-top: -60px;
     margin: auto;
 }
 .aboutme img{
-    width: 170px;
+    padding-left: 0px;
 }
 .service_imges{
     flex-direction: column;
@@ -916,8 +914,8 @@ margin-top: -60px;
     width: 100%;
 }
 .Contact_nav p{
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 28px;
 }
 /* works.html */
 
