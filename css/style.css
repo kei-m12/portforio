@@ -282,6 +282,7 @@ padding-bottom: 35px;
     margin-right: 110px;
 }
 .career2 p{
+    width: 310px;
     font-size: 14px;
     line-height: 24px;
     text-align: start;
@@ -401,7 +402,9 @@ font-size: 20px;
     padding-left: 15px;
 }
 
-
+.graphic_page_manu{
+    margin-bottom: 30px;
+}
 
 /* contact_html */
 /* .form p{ 
@@ -686,10 +689,12 @@ footer p{
 
 /* works11,5 */
 
-.promotion_1 image {
+.promotion_1 img {
    width: 200px;
 }
-
+.banner_pic{
+    width: 200px;
+}
 .pc2{
         padding-bottom: 90px;
         width: 350px;
@@ -975,7 +980,9 @@ margin-left: 0;
 .career2 img {
     width: 100%
 }
-
+.career2 P{
+    width:280px;
+}
 /* contact */
 
 /* works　実績*/
@@ -1053,7 +1060,11 @@ display: none;
     display: none;
     
 }
-
+.side{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 .side1_sp,.side2_sp{
     display: block;
     display: flex;
