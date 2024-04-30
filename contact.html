@@ -59,59 +59,46 @@
             </ul>
         </nav>
     </header>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf4pQh4f_6bno9NfvFkePafBn2ER3zrrDYcCaXBWBoDCGelTw/viewform"
-        method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
-    </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='THANKSページのURL';}"></iframe>
-    <input name="entry.690315515" class="c-form__input" id="field-name" placeholder="株式会社 山田" type="text"
-        required="required" />
-    <textarea name="entry.1726417427" class="c-form__input" id="field-message" placeholder="お問い合わせ内容"></textarea>
-    <p style="text-align: center; margin: 40px auto">
-        お気軽にお問い合わせください。
-    </p>
-    <form class="c-form">
-        <div class="c-form__item">
-            <label class="c-form__label" for="field-name">名前・会社名<span class="c-form__required">必須</span></label>
-            <input class="c-form__input" id="field-name" placeholder="株式会社 山田" type="text" required="required" />
-        </div>
-        <div class="c-form__item">
-            <label class="c-form__label" for="field-mail">メールアドレス<span class="c-form__required">必須</span></label>
-            <input class="c-form__input" id="field-mail" placeholder="sample@gmail.com" type="email"
-                required="required" />
-        </div>
-        <div class="c-form__item">
-            <label class="c-form__label" for="field-message">メッセージ内容</label>
-            <textarea class="c-form__input" id="field-message" placeholder="お問い合わせ内容"></textarea>
-        </div>
-        <div class="c-form__submit">
-            <button type="submit">送信する</button>
-        </div>
-    </form>
-    <!-- <section class="form">
-        <h2 id="CONTACT">CONTACT</h2>
-        <p>お仕事のお問合せ・ご依頼はもちろんご相談も賜わります！<br>
-            どうぞお気軽にお問い合せください。</p>
-        <img src="./images/flower3.png" alt="">
+    <section>
 
+        <section class="Contact_nav_sankspage">
+            <h2>CONTACT</h2>
+            <p>
+                お仕事のお問合せ・ご依頼はもちろん<br />ご相談も賜わります！<br />
+                どうぞお気軽にお問い合せください。
+            </p>
+            <img src="./images/flower3.png" alt="" />
+        </section>
 
-        <form action="form_nav">
-
-            <label for="name">お名前 Name</label>
-            <input type="text" placeholder="例：タナカ タロウ" name="name" required>
-
-            <label for="email">メールアドレス Mail adress</label>
-            <input type="email" placeholder="例:example@gmail.com" name="email" required>
-
-            <label for="tell">電話番号 Tell</label>
-            <input type="tell" placeholder="例:08000000000" name="tell" required>
-
-            <label for="message">お問合せ内容 Massage</label>
-            <input type="message" placeholder="こちらにお問合せ内容をご記入ださい。" name="message" required>
-
+        <form class="c-form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf4pQh4f_6bno9NfvFkePafBn2ER3zrrDYcCaXBWBoDCGelTw/formResponse"
+            method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-name">お名前 Name<span class="c-form__required">必須</span></label>
+                <input name="entry.391684191" class="c-form__input" id="field-name" placeholder="例：タナカ タロウ" type="text"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-mail">メールアドレス Mail adress<span
+                        class="c-form__required">必須</span></label>
+                <input name="" class="c-form__input" id="field-mail" placeholder="例:example@gmail.com" type="email"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-tel">電話番号 Tel<span class="c-form__required">必須</span></label>
+                <input name="1916154646" class="c-form__input" id="field-tel" placeholder="例:08000000000" type="tel"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-message">お問合せ内容 Massage</label>
+                <textarea name="entry.85778337" class="c-form__input" id="field-message"
+                    placeholder="こちらにお問合せ内容をご記入ださい。"></textarea>
+            </div>
+            <div class="c-form__submit">
+                <button type="submit">送 信</button>
+            </div>
         </form>
-    </section> -->
-
+    </section>
     <footer>
         <a href="./index.html" class="logo">
             <img src="./images/logo.png" alt="">

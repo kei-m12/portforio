@@ -26,6 +26,40 @@
 </head>
 
 <body>
+    <!-- loading -->
+    <div class="loading-bg">
+        <div class="loading">
+            <svg width="400" height="400" viewBox="0 0 200 200" class="loading-area">
+                <!-- 半径を80に設定し、中心座標も調整 -->
+                <circle class="circle" cx="100" cy="100" r="80"></circle>
+                <!-- テキスト位置を調整 -->
+            </svg>
+            <img class="text" alignment-baseline="central" src="./images/flower3.png" />
+        </div>
+    </div>
+    <script>
+        $(function () {
+            // セッションストレージを利用して初回アクセスかどうかを判定
+            var isFirstAccess = !sessionStorage.getItem("access");
+            sessionStorage.setItem("access", "true"); // アクセス済みとして記録
+
+            if (isFirstAccess) {
+                // 初回アクセス時の処理: ローディングを3秒後に非表示にする
+                setTimeout(function () {
+                    $(".loading-bg").fadeOut();
+                }, 3000);
+            } else {
+                // 2回目以降のアクセス時: ローディング画面をすぐに非表示にする
+                $(".loading-bg").fadeOut();
+            }
+
+            // アニメーション終了時の処理を各`.mv__img`要素にバインド
+            $(".mv__img").on("animationend", function (event) {
+                console.log("Animation ended for", event.target);
+                // 必要に応じて追加のスタイル変更をここに記述
+            });
+        });
+    </script>
 
     <header>
 
