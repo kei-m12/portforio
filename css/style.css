@@ -473,7 +473,7 @@ h5 {
   padding-bottom: 70px;
 } */
 .c-form {
-  max-width: 600px;
+  max-width: 450px;
   margin: 0 auto;
   
 }
@@ -482,15 +482,12 @@ h5 {
   flex-flow: column;
   margin-bottom: 70px;
 }
-.c-form__label,
-.c-form__input {
-  padding: 10px;
-}
+
 .c-form__label {
   width: 90%;
 }
 .c-form__input {
-  width: 75%;
+  width: 100%;
     padding: 16px 16px;
     margin-top: 20px;
     border: 1px solid #fff;
@@ -532,17 +529,14 @@ textarea.c-form__input {
 }
 .c-form__submit button:hover {
   color: rgb(58, 54, 54);
-  background-color: transparent;
+  opacity: .7;
 }
 
 @media (min-width: 640px) {
   .c-form__item {
     flex-wrap: nowrap;
   }
-  .c-form__label {
-    width: 40%;
-   
-  }
+  
   /* .c-form__input {
     width: 55%; */
   }
@@ -764,10 +758,20 @@ footer p {
 .promotion_1 image {
   width: 200px;
 }
-
-.pc2 {
+.promotion_1 ul{
+  display: flex;
+  justify-content: space-between;
+}
+.banner_pic{
+  width: 220px;
+}
+.iphon_pic{
+  width: 510px;
+}
+.pc2,.pc {
   padding-bottom: 90px;
-  width: 350px;
+  width: 450px;
+  padding-left: 30px;
 }
 .sikaku {
   background-color: #544c40;
@@ -802,7 +806,7 @@ footer p {
 }
 
 .promotion_3_pc {
-  width: 58%;
+
   margin: 0 auto;
   margin-bottom: 125px;
 }
@@ -841,6 +845,37 @@ footer p {
   display: block;
   padding-bottom: 70px;
   
+}
+/* thanks.html */
+/* mainタグ */
+.contact_thanks {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* ------------------------------------ */
+/* 送信後のサンクスページ専用 */
+/* ------------------------------------ */
+.section-thanks{
+  padding: 100px 40px;
+}
+.thanks_h1{
+  font-size: 2.8rem;
+  text-align: center;
+}
+.thanks_a{
+  background-color:#d3b3a8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8rem;
+  width: 12em;
+  height: 3em;
 }
 /* none sp*/
 .header_nav_sp,
@@ -1079,7 +1114,10 @@ footer p {
   }
 
   /* contact */
-
+  .c-form {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
   /* works　実績*/
   .works_sub h2 {
     font-size: 14px;
@@ -1150,13 +1188,22 @@ footer p {
     display: none;
   }
   .promotion_pic {
-    display: none;
+    /* display: none; */
+    flex-direction: column;
   }
   .promotion_pic_sp {
     display: block;
     padding-left: 20px;
     padding-right: 20px;
   }
+  .promotion_1 ul {
+    flex-direction: column;
+  }
+  
+.promotion_3_fly{
+  width: 70%;
+  margin-top: -80px;
+}
   .works_sub img {
     width: 100%;
   }
