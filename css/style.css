@@ -37,17 +37,17 @@
   stroke-width: 1;
   stroke-dasharray: 502.4; /* 半径80pxの円の円周（約502.4px） */
   stroke-dashoffset: 502.4; /* 初期状態では円が見えないように */
-  animation: spin 2s ease-in-out forwards; /* 2秒でアニメーション */
+  animation: spin 3s ease-in-out forwards; /* 4秒でアニメーション */
 }
 .text {
-  width: 230px;
+  width: 180px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
-  animation-delay: 2s; /* 円が完成した後にテキストが現れるように */
+  animation-delay: 3s; /* 円が完成した後にテキストが現れるように */
 }
 @media screen and (max-width: 767px) {
   svg{
@@ -108,7 +108,7 @@ h1 span {
 }
 
 body {
-  background-image: url(../images/background_pc１@3x.png);
+  background-image: url(../images/background_pc@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -270,7 +270,9 @@ h5 {
   width: 360px;
   border-radius: 5px;
 }
-
+.accordion-area input{
+  display: none;
+}
 /* contact */
 .Contact_nav {
   text-align: center;
@@ -856,11 +858,26 @@ footer p {
 /* 送信後のサンクスページ専用 */
 /* ------------------------------------ */
 .section-thanks{
-  padding: 100px 40px;
+  padding: 100px 70px;
 }
-.thanks_h1{
-  font-size: 2.8rem;
+.section-thanks p{
+  font-size: 28px;
   text-align: center;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: -30px;
+  
+}
+.contact_thanks h2{
+  font-size: 16px;
+  line-height: 28px;
+  
+}
+.section-thanks img{
+  margin: auto;
+  display: block;
+  width: 110px;
 }
 .thanks_a{
   background-color:#d3b3a8;
@@ -868,12 +885,12 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  margin-top: 100px;
+  border-radius: 50px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.8rem;
-  width: 12em;
+  font-size: 1rem;
+  width: 10em;
   height: 3em;
 }
 /* none sp*/

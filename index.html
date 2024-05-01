@@ -47,7 +47,7 @@
                 // 初回アクセス時の処理: ローディングを3秒後に非表示にする
                 setTimeout(function () {
                     $(".loading-bg").fadeOut();
-                }, 3000);
+                }, 5000);
             } else {
                 // 2回目以降のアクセス時: ローディング画面をすぐに非表示にする
                 $(".loading-bg").fadeOut();
@@ -165,7 +165,7 @@
             <h5>※目的やター ゲットにあったデザインをお作りいたします。</h5>
             <ul class="accordion-area">
                 <li>
-
+                    <input type="checkbox" id="label1" />
                     <div class="title"><img src="./images/glaphic_view.png" alt=""></div>
                     <div class="box">
                         <p>・コーポレートサイトやランディングページ(LP)<br>
@@ -178,8 +178,10 @@
 
                 </li>
                 <li>
-
-                    <div class="title"><img src="./images/pc_view.png" alt=""></div>
+                    <input type="checkbox" id="label2" />
+                    <div class="title" id="menu2">
+                        <label for="label2" class="pad_ie"><img src="./images/pc_view.png" alt=""></label>
+                    </div>
                     <div class="box">
                         <p>
                             ・各種チラシ<br>
@@ -189,6 +191,8 @@
                     </div>
 
                 </li>
+            </ul>
+            <label for="label2" class="box-close" for="acc-close" onclick="inputClick('#menu2')">X</label>
         </section>
 
         <section class="Contact_nav">
@@ -244,6 +248,21 @@
                 var Box = $(element).children('.box'); //openクラスの子要素boxクラスを取得
                 $(Box).slideDown(500);          //アコーディオンを開く
             });
+        });
+
+
+        window.addEventListener("scroll", function () {
+            const header_nav = document.querySelector(".header_nav");
+            const scroll = window.pageYOffset;
+            if (scroll > 500) {
+                header_nav.style.opacity = "1";
+                header_nav.style.zIndex = "1";
+                // console.log(scroll);
+            } else {
+                header_nav.style.opacity = "0";
+                header_nav.style.zIndex = "-1";
+                // console.log(scroll);
+            }
         });
     </script>
 
