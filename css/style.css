@@ -238,6 +238,11 @@ h5 {
   justify-content: center;
   gap: 37px;
 }
+.box span{
+  text-align: right;
+  display: block;
+  color: white;
+}
 .box p {
   text-align: left;
   line-height: 2;
@@ -1042,7 +1047,7 @@ footer p {
   .box {
     width: 100%;
     margin: 0 auto;
-    margin-top: -60px;
+    
   }
 
   .button_about,
