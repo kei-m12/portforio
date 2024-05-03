@@ -31,7 +31,7 @@
         <div class="loading">
             <svg width="400" height="400" viewBox="0 0 200 200" class="loading-area">
                 <!-- 半径を80に設定し、中心座標も調整 -->
-                <circle class="circle" cx="100" cy="100" r="80" transform="(-90 100 100)"></circle>
+                <circle class="circle" cx="100" cy="100" r="80" transform="rotate(-90 100 100)"></circle>
                 <!-- テキスト位置を調整 -->
             </svg>
             <img class="text" alignment-baseline="central" src="./images/flower3.png" />
@@ -166,7 +166,7 @@
             <ul class="accordion-area">
                 <li>
 
-                    <div class="title"><img src="./images/glaphic_view.png" alt=""></div>
+                    <div class="title"><img src="./images/pc_view@3x.png" alt=""></div>
                     <div class="box">
                         <p>・コーポレートサイトやランディングページ(LP)<br>
                             ・HTML / CSSを用いてコーディング<br>
@@ -174,14 +174,14 @@
                             ・レスポンシブ対応<br>
                             ・SNSバナー・投稿デザイン
                         </p>
-                        <span class="closetext">close</span>
+
                     </div>
 
                 </li>
                 <li>
 
                     <div class="title">
-                        <img src="./images/pc_view.png" alt=""></label>
+                        <img src="./images/glaphic_view3@3x.png" alt=""></label>
                     </div>
                     <div class="box">
                         <p>
@@ -250,7 +250,18 @@
                 $(Box).slideDown(500);          //アコーディオンを開く
             });
         });
+        $(function () {
+            $('.title').on('click', function () {
+                $(this).next().slideToggle();
+                //openクラスをつける
+                $(this).toggleClass("open");
+                //クリックされていないac-parentのopenクラスを取る
+                $('.title').not(this).removeClass('open');
 
+                // 一つ開くと他は閉じるように
+                $('.title').not($(this)).next('.box').slideUp();
+            });
+        });
 
         window.addEventListener("scroll", function () {
             const header_nav = document.querySelector(".header_nav");
