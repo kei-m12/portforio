@@ -597,6 +597,7 @@ footer p {
   align-items: center;
   padding-left: 10px;
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 .worksline_content::before {
   margin-right: 20px;
@@ -808,9 +809,7 @@ footer p {
 .banner_pic{
   width: 220px;
 }
-.iphon_pic{
-  width: 510px;
-}
+
 .pc2,.pc {
   padding-bottom: 90px;
   width: 450px;
@@ -839,7 +838,6 @@ footer p {
 .promotion_1 {
   background-color: #eda8864b;
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 .promotion_pic {
   display: flex;
@@ -1291,9 +1289,7 @@ footer p {
   .side2_sp img {
     width: 90px;
   }
-  .Contact_nav img {
-    width: 20%;
-  };
+  
   
   .promotion_itme img:first-child
   .promotion_itme img:nth-child(2){
