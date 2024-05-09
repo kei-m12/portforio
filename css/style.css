@@ -108,7 +108,7 @@ h1 span {
 }
 
 body {
-  background-image: url(../images/background_pc@3x.png);
+  background-image: url(../images/background@2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -529,7 +529,7 @@ h5 {
     opacity: 0.8;
 }
 .c-form__input:focus-visible {
-  outline: green auto 1px;
+  outline: #d3b3a8 auto 1px;
 }
 .c-form__required {
   font-size: 10px;
@@ -796,18 +796,22 @@ footer p {
 
 
 .promotion_1 ul{
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .promotion_itme{
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   width: 45%;
 }
 
 .banner_pic{
-  width: 220px;
+  width: 50%;
 }
 
 .pc2,.pc {
@@ -843,8 +847,8 @@ footer p {
   display: flex;
   justify-content: space-evenly;
   max-width: 100%;
+  width: 90%;
   margin: 0 auto;
-  width: 500px;
 }
 
 .promotion_3_pc {
@@ -877,7 +881,7 @@ footer p {
   text-align: center;
 }
 .Contact_nav_sankspage p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   padding-bottom: 50px;
 }
@@ -1105,7 +1109,7 @@ footer p {
     width: 100%;
   }
   .Contact_nav p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px;
   }
   /* works.html */
@@ -1239,29 +1243,29 @@ footer p {
   .workers_pc {
     margin-inline: 10%;
   }
-
-  /* works_05,11 */
-  /* .promotion_3 h4,
-  .sikaku {
-    display: none; */
+  .promotion_1 ul{
+    flex-direction: column;
   }
-  
-  .promotion_pic {
+  .promotion_itme{
+    width: 100%;
+    text-align: center;
+    display: block;
+ }
+
+ .promotion_pic {
     /* display: none; */
     align-items: center;
     flex-direction: column;
   }
+
  .pc,.pc2{
   width: 100%;
  }
   
-  .promotion_1 ul{
-    flex-direction: column;
-  }
-.promotion_3_fly{
+ .promotion_3_fly{
   width: 70%;
   margin-top: -80px;
-}
+ }
   .works_sub img {
     width: 100%;
   }
@@ -1298,7 +1302,13 @@ footer p {
   .promotion_itme img{
     width: 45%;
   }
-
+  /* works_05,11 */
+  /* .promotion_3 h4,
+  .sikaku {
+    display: none; 
+    }*/
+  
+}
 @media screen and (max-width: 950px) {
   .works_page_menu {
     justify-content: center;

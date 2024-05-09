@@ -144,7 +144,7 @@
                 <a href="works01.html"><img src="./images/works_pc1.jpg" alt=""></a>
                 <a href="works02.html"><img src="./images/works_pc2.jpg" alt=""></a>
                 <a href="works04.html"><img src="./images/works_pc4.jpg" alt=""></a>
-                <a href="works11_05.html"><img src="./images/works_pc5@2x-50.jpg" alt=""></a>
+                <a href="works11_05.html"><img src="./images/works_pc5@3x.png" alt=""></a>
                 <a href="works06.html"><img src="./images/works_pc6.jpg" alt=""></a>
                 <a href="works07.html"><img src="./images/works_pc7.jpg" alt=""></a>
             </div>
@@ -166,7 +166,7 @@
             <ul class="accordion-area">
                 <li>
 
-                    <div class="title"><img src="./images/pc_view@3x.png" alt=""></div>
+                    <div class="title close"><img src="./images/pc_view@3x.png" alt=""></div>
                     <div class="box">
                         <p>・コーポレートサイトやランディングページ(LP)<br>
                             ・HTML / CSSを用いてコーディング<br>
@@ -181,8 +181,8 @@
                 </li>
                 <li>
 
-                    <div class="title">
-                        <img src="./images/glaphic_view@3x.png" alt=""></label>
+                    <div class="title close">
+                        <img src="./images/glaphic_view@3x.png" alt="">
                     </div>
                     <div class="box">
                         <p>
@@ -244,6 +244,7 @@
 
         //ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
         $(window).on('load', function () {
+            $('.box').hide();
             $('.accordion-area li:first-of-type section').addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
             $(".open").each(function (index, element) { //openクラスを取得
                 var Title = $(element).children('.title'); //openクラスの子要素のtitleクラスを取得
@@ -256,6 +257,8 @@
         $('.closetext').on('click', function () {
             $('.box').slideToggle();
         });
+
+
         // $(function () {
         //     $('.title').on('click', function () {
         //         $(this).next().slideToggle();
